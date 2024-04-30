@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('./src/assets/Font/lexendgx.woff2');  */
+@font-face {
+  font-family: "Lexend GX";
+  src: url("./src/assets/Font/lexendgx.woff2") format("woff2");
+  /* Add additional font formats if necessary */
+}
+body {
+ 
+  font-family: "Lexend GX", sans-serif;
+}
+
+#login-main .image-div {
+  background-color: rgba(113, 82, 243, 0.05);
+}
+.dashboard-image {
+  object-fit: contain;
+}
+
+.form-div-login {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-main form .input-lable {
+  border-color: rgba(113, 82, 243, 1);
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 5px;
+}
+#login-main form input:focus-visible {
+  outline-width: 0px !important;
+}
+
+#login-main .checkbox-warning:checked {
+  background-image: linear-gradient(
+      -45deg,
+      transparent 65%,
+      var(#7152f3) 65.99%
+    ),
+    linear-gradient(45deg, transparent 75%, var(#7152f3) 75.99%),
+    linear-gradient(-45deg, var(#7152f3) 40%, transparent 40.99%),
+    linear-gradient(
+      45deg,
+      var(#7152f3) 30%,
+      var(#7152f3) 30.99%,
+      var(#7152f3) 40%,
+      transparent 40.99%
+    ),
+    linear-gradient(-45deg, var(#7152f3) 50%, var(#7152f3) 50.99%) !important;
+  border-color: #7152f3;
+  color: white;
+}
+
+.checkbox-warning {
+  border-color: rgba(113, 82, 243, 1);
+}
+
+.modal {
+  inset: 0px;
+
+  /* background-color: #a2a1a80d; */
+  background-color: rgba(255, 255, 255, 0.37);
+
+  backdrop-filter: blur(0.5px);
+}
+
+#sidebar .sidebar-items ul li.active {
+  border-left-color: #7152f3;
+  border-left-width: 3px;
+  color: #7152f3;
+  padding-inline: 10px;
+  background-color: rgba(113, 82, 243, 0.05);
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#sidebar .sidebar-items ul li {
+  color: #000;
+  padding-inline: 10px;
+
+  padding: 15px;
+}
+
+.swith-dark {
+  width: 80px;
+  border-radius: 5px;
+}
+.swith-light {
+  background-color: #7152f3;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.selected-range {
+  background-color: lightblue !important;
+}
+
+.selected-start-date {
+  background-color: lightgreen !important;
+}
+
+.selected-end-date {
+  background-color: lightcoral !important;
+}
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button,
+button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  background: #7152f3;
+  color: white;
+  size: 24px;
+  border-radius: 50px;
+}
+
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border: 0px solid #a0a096;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr,
+button.react-calendar__tile.react-calendar__month-view__days__day abbr {
+  text-decoration: none;
+  font-family: "Lexend GX", sans-serif;
+}
+
+.react-calendar__tile--active {
+  background: #7152f3;
+  color: white !important;
+  size: 24px;
+  border-radius: 50px;
+}
+
+.react-calendar__tile--now {
+  background: #7152f3;
+  color: #fff;
+  size: 24px;
+  border-radius: 50px;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: rgb(141 117 245);
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #000;
+}
+/* line.MuiChartsAxis-tick {
+  display: none;
+} */
+line.MuiChartsAxis-line {
+  display: none;
+}
+
+.css-1u0lry5-MuiChartsLegend-root {
+  display: none;
+}
+.MuiXAxis-root .recharts-cartesian-axis-tick-line {
+  stroke-width: 1px; /* Adjust the stroke width as needed */
+}
+
+.gradient-border {
+  border-left: 2px solid;
+  border-image: linear-gradient(#7152f3, #7152f300) 1;
+}
